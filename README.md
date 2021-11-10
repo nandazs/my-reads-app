@@ -12,7 +12,7 @@ Você pode começar executando `yarn/npm install` no terminal e depois `yarn/npm
 
 ## Servidor Backend
 
-Para simplificar o processo de desenvolvimento, um backend já foi criado para esse app. O arquivo [`api.js`](./src/api.js) contém os métodos necessários para fazer as operações necessárias no backend:
+Para simplificar o processo de desenvolvimento, um backend já foi criado para esse app. O arquivo [`api.js`](./src/services/api.js) contém os métodos necessários para fazer as operações necessárias no backend:
 
 * [`getBook`](#getBook)
 * [`getMyBooks`](#getMyBooks)
@@ -42,7 +42,7 @@ getMyBooks().then(function(data) {
 ### `searchBooks`
 
 > Pesquisa e retorna todos os livros de um determinado assunto, que podem ou não estar nos meus livros.
-> O termo pesquisado deve ser um dos listados nas palavras-chave, outros termos podem não funcionar.
+> O termo pesquisado deve ser um dos listados nas [`palavras-chave`](./src/config/constants.js), outros termos podem não funcionar.
 
 ```
 searchBooks(PALAVRA_CHAVE).then(function(data) {
