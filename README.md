@@ -42,7 +42,7 @@ getMyBooks().then(function(data) {
 ### `searchBooks`
 
 > Pesquisa e retorna todos os livros de um determinado assunto, que podem ou não estar nos meus livros.
-> O termo pesquisado deve ser um dos listados nas [palavras-chave](./PALAVRAS_CHAVE.md), outros termos podem não funcionar.
+> O termo pesquisado deve ser um dos listados nas palavras-chave, outros termos podem não funcionar.
 
 ```
 searchBooks(PALAVRA_CHAVE).then(function(data) {
