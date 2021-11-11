@@ -32,7 +32,7 @@ getBook(BOOK_ID).then(function(data) {
 ### `getMyBooks`
 
 > Pesquisa e retorna todos os meus livros.
-```
+```jsx
 getMyBooks().then(function(data) {
   const books = data.books
   // ...
@@ -44,7 +44,7 @@ getMyBooks().then(function(data) {
 > Pesquisa e retorna todos os livros de um determinado assunto, que podem ou não estar nos meus livros.
 > O termo pesquisado deve ser um dos listados nas [`palavras-chave`](./src/config/constants.js), outros termos podem não funcionar.
 
-```
+```jsx
 searchBooks(PALAVRA_CHAVE).then(function(data) {
   const books = data.books
   // ...
@@ -55,7 +55,7 @@ searchBooks(PALAVRA_CHAVE).then(function(data) {
 
 > Atualiza um livro para que ele pertença à uma determinada estante. Retorna todas as categorias da estante e os id's de livros pertencentes a cada estante. Pode ser usado para remover um livro de uma estante, basta passar como argumento qualquer estante diferente das 3 existentes.
 
-```
+```jsx
 updateBook(BOOK, ESTANTE).then(function(data) {
   const estouLendoIDs = data.currentlyReading
   const queroLerIDs = data.wantToRead
